@@ -34,23 +34,23 @@
 				<h2>Presets</h2>
 				<row>
 					<button onClick='Events.pushevent("exec preset presets/graphics/lowest.cfg", event)'>Lowest</button>
-					<span>Quarter size textures, no multitexturing like normal or specular mapping…</span>
+					<span>No multitexturing like normal or specular mapping, 64-sized textures…</span>
 				</row>
 				<row>
 					<button onClick='Events.pushevent("exec preset presets/graphics/low.cfg", event)'>Low</button>
-					<span>Half size textures, multisampling, anisotropic mip-mapping, shadows, bouncing particles…</span>
+					<span>Multisampling, anisotropic mip-mapping, shadows, bouncing particles, 256-sized textures…</span>
 				</row>
 				<row>
 					<button onClick='Events.pushevent("exec preset presets/graphics/medium.cfg", event)'>Medium</button>
-					<span>Multitexturing like normal, specular and physical mapping, bloom, trilinear filtering…</span>
+					<span>Multitexturing like normal, specular and physical mapping, bloom, trilinear filtering, 512-sized textures…</span>
 				</row>
 				<row>
 					<button onClick='Events.pushevent("exec preset presets/graphics/high.cfg", event)'>High</button>
-					<span>Dynamic lights, heat haze, motion blur, better multisampling…</span>
+					<span>Dynamic lights, heat haze, motion blur, better multisampling, 2048-sized textures…</span>
 				</row>
 				<row>
 					<button onClick='Events.pushevent("exec preset presets/graphics/ultra.cfg", event)'>Ultra</button>
-					<span>Relief mapping and other features and effects enabled, options maxed out…</span>
+					<span>Relief mapping and other features and effects enabled, 4096-sized textures…</span>
 				</row>
 			</panel>
 			<tab> Video </tab>
