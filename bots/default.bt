@@ -1,11 +1,18 @@
 selector
 {
-	condition team == TEAM_HUMANS
+	decorator return( STATUS_FAILURE )
 	{
-		behavior defaultHumans
+		selector
+		{
+			condition team == TEAM_HUMANS
+			{
+				behavior defaultHumans
+			}
+			condition team == TEAM_ALIENS
+			{
+				behavior defaultAliens
+			}
+		}
 	}
-	condition team == TEAM_ALIENS
-	{
-		behavior defaultAliens
-	}
+	behavior unstick
 }

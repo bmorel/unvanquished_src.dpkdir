@@ -4,6 +4,11 @@ condition(stuckTime > 3000)
 {
 	selector
 	{
+		condition( goalTeam == team && distanceTo( E_GOAL ) < 150 )
+		{
+			action resetStuckTime
+		}
+
 		condition(stuckTime > 10000)
 		{
 			action suicide
@@ -16,18 +21,22 @@ condition(stuckTime > 3000)
 				action jump
 			}
 		}
+
 		condition(stuckTime > 1750)
 		{
 			action moveInDir(MOVE_FORWARD)
 		}
+
 		condition(stuckTime > 1500)
 		{
 			action moveInDir(MOVE_RIGHT)
 		}
+
 		condition(stuckTime > 1250)
 		{
 			action moveInDir(MOVE_BACKWARD)
 		}
+
 		sequence
 		{
 			action moveInDir(MOVE_LEFT)
