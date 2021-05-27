@@ -97,6 +97,14 @@
 					<h3> Light Armour </h3>
 				</row>
 				<row>
+					<input cvar="g_bot_firebomb" type="checkbox" />
+					<h3> Firebomb </h3>
+				</row>
+				<row>
+					<input cvar="g_bot_grenade" type="checkbox" />
+					<h3> Grenade </h3>
+				</row>
+				<row>
 					<input cvar="g_bot_radar" type="checkbox" />
 					<h3> Radar </h3>
 				</row>
