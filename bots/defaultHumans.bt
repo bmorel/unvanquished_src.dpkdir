@@ -25,7 +25,7 @@ selector
 				{
 					sequence
 					{
-						condition ( healScore <= 0.5 && percentHealth( E_GOAL ) > 0.3  && random > 0.3 )
+						condition ( healScore > 0.5 && percentHealth( E_GOAL ) > 0.3  && random > 0.3 )
 						action heal
 					}
 				}
@@ -57,8 +57,8 @@ selector
 
 		sequence
 		{
-			condition !haveUpgrade( UP_MEDKIT )
-			condition healScore <= 0.25
+			//condition !haveUpgrade( UP_MEDKIT )
+			condition healScore > 0.50
 			action heal
 		}
 	}
