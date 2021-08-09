@@ -35,9 +35,8 @@ selector
 					{
 						action fight
 					}
-					sequence
+					condition ( healScore > 0.5 && percentHealth( E_SELF ) > 0.3 )
 					{
-						condition ( healScore > 0.5 && percentHealth( E_GOAL ) > 0.3  && random > 0.3 )
 						action heal
 					}
 				}
